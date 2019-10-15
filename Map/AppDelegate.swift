@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //let BarButtonItemAppearance = UIBarButtonItem.appearance()
+        //let image = UIImage(named: "left")
+        //UINavigationBar.appearance()
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "left")
+    UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "left")
+        //let image2 = image?.stretchableImage(withLeftCapWidth: 0, topCapHeight: 10)
+        //BarButtonItemAppearance.setBackgroundImage(image, for: .normal, barMetrics: .default)
+        //BarButtonItemAppearance.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.clear], for: .normal)
         return true
     }
 
